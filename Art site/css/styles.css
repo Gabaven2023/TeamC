@@ -10971,6 +10971,7 @@ section.resume-section .resume-section-content {
   }
 }
 
+<<<<<<< HEAD
 .textbox-003-label,
 .textbox-003 {
     color: #333;
@@ -11021,3 +11022,16 @@ section.resume-section .resume-section-content {
 .textbox-003::placeholder {
     color: #999;
 }
+=======
+
+
+
+
+/*中尾知夏*/
+#preview img {
+  width: 200px;
+  margin: 10px;
+  border: solid 1px silver;
+}
+
+>>>>>>> 8b91407e1d6774852d2180757f15b5e66677392d
