@@ -110,31 +110,9 @@
                               <title>test</title>
                             </head>
                             <body>
-                                <form action="test.html" method="post"  enctype="multipart/form-data" >
+                              <form action="test.html" method="post" enctype="multipart/form-data" >
                                 <input type="file" name="test" onchange="previewFile(this);">
-        
-                                <style type="text/css">
-                                    .button {
-                                      display       : inline-block;
-                                      border-radius : 20%;          /* 角丸       */
-                                      font-size     : 18pt;        /* 文字サイズ */
-                                      text-align    : center;      /* 文字位置   */
-                                      cursor        : pointer;     /* カーソル   */
-                                      padding       : 12px 12px;   /* 余白       */
-                                      background    : #ff7f00;     /* 背景色     */
-                                      color         : #333333;     /* 文字色     */
-                                      line-height   : 1em;         /* 1行の高さ  */
-                                      transition    : .3s;         /* なめらか変化 */
-                                      box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
-                                      border        : 2px solid #ff7f00;    /* 枠の指定 */
-                                    }
-                                    .button:hover {
-                                      box-shadow    : none;        /* カーソル時の影消去 */
-                                      color         : #ff7f00;     /* 背景色     */
-                                      background    : #333333;     /* 文字色     */
-                                    }
-                                    </style>
-        
+                                <input type="submit" value="送信する">
                               </form>
                               <p>プレビュー</p>
                               <img id="preview">
@@ -151,10 +129,10 @@
                               }
                               </script>
                               </body>
-                            </html>  
+                            </html>
         
         
-                            <!DOCTYPE html>
+        <!DOCTYPE html>
         <html lang="ja">
         <head>
         <meta charset="utf-8">
