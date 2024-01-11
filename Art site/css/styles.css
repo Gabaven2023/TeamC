@@ -2352,7 +2352,7 @@ textarea.form-control-lg {
   width: 1rem;
   height: 1rem;
   margin-top: -0.25rem;
-  background-color: #bd5d38;
+  background-color: #43e1ef;
   border: 0;
   border-radius: 1rem;
   -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3236,7 +3236,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-hover-color: #1e2125;
   --bs-dropdown-link-hover-bg: #e9ecef;
   --bs-dropdown-link-active-color: #fff;
-  --bs-dropdown-link-active-bg: #bd5d38;
+  --bs-dropdown-link-active-bg: rgb(79, 211, 255);
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
@@ -10971,67 +10971,4 @@ section.resume-section .resume-section-content {
   }
 }
 
-<<<<<<< HEAD
-.textbox-003-label,
-.textbox-003 {
-    color: #333;
-}
 
-.textbox-003-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: .9em;
-}
-
-.textbox-003 {
-    width: 100%;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 25px;
-    background: #ffe2d6;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.textbox-003::placeholder {
-    color: #999;
-}
-
-
-.textbox-003-label,
-.textbox-003 {
-    color: #333;
-}
-
-.textbox-003-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: .9em;
-}
-
-.textbox-004 {
-    width: 160%;
-    padding: 8px 10px;
-    border: none;
-    border-radius: 25px;
-    background: #ffe2d6;
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-.textbox-003::placeholder {
-    color: #999;
-}
-=======
-
-
-
-
-/*中尾知夏*/
-#preview img {
-  width: 200px;
-  margin: 10px;
-  border: solid 1px silver;
-}
-
->>>>>>> 8b91407e1d6774852d2180757f15b5e66677392d
