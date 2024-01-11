@@ -94,95 +94,6 @@
 <<<<<<< HEAD
                     <h2 class="mb-5">Education</h2>
            
-
-                    <!DOCTYPE html>
-                    <html lang="ja">
-                    <head>
-                      <meta charset="UTF-8">
-                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                      <title>test</title>
-                    </head>
-                    <body>
-                        <form action="test.html" method="post"  enctype="multipart/form-data" >
-                        <input type="file" name="test" onchange="previewFile(this);">
-
-                        <style type="text/css">
-                            .button {
-                              display       : inline-block;
-                              border-radius : 20%;          /* 角丸       */
-                              font-size     : 18pt;        /* 文字サイズ */
-                              text-align    : center;      /* 文字位置   */
-                              cursor        : pointer;     /* カーソル   */
-                              padding       : 12px 12px;   /* 余白       */
-                              background    : #ff7f00;     /* 背景色     */
-                              color         : #333333;     /* 文字色     */
-                              line-height   : 1em;         /* 1行の高さ  */
-                              transition    : .3s;         /* なめらか変化 */
-                              box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
-                              border        : 2px solid #ff7f00;    /* 枠の指定 */
-                            }
-                            .button:hover {
-                              box-shadow    : none;        /* カーソル時の影消去 */
-                              color         : #ff7f00;     /* 背景色     */
-                              background    : #333333;     /* 文字色     */
-                            }
-                            </style>
-
-                      </form>
-                      <p>プレビュー</p>
-                      <img id="preview">
-                     
-                      <script>
-                      function previewFile(hoge){
-                        var fileData = new FileReader();
-                        fileData.onload = (function() {
-                          //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
-                          //プレビュー表示している
-                          document.getElementById('preview').src = fileData.result;
-                        });
-                        fileData.readAsDataURL(hoge.files[0]);
-                      }
-                      </script>
-                      </body>
-                    </html>  
-
-
-                    <!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>HTML入門-フォームの作成</title>
-</head>
-<body>
-<form action="#" method="post">
-	<p>作品名：<br>
-        <label>
-            <span class="textbox-003-label"></span>
-            <input type="text" class="textbox-003" placeholder="作品名"/>
-        </label>
-	<p>作者：<br>
-        <label>
-            <span class="textbox-003-label"></span>
-            <input type="text" class="textbox-003" placeholder="作者"/>
-        </label>
-    <p>使用画材、素材：<br>
-        <label>
-            <span class="textbox-004-label"></span>
-            <input type="text" class="textbox-004" placeholder="使用画材、素材"/>
-        </label>
-
-    <p>サイズ：<br>
-        <label>
-            <span class="textbox-003-label"></span>
-            <input type="text" class="textbox-003" placeholder="サイズ"/>
-        </label>
-</form>
-</body>
-
-                  
-
-                   
-                <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 =======
                     <h2 class="mb-5">投稿する</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -190,6 +101,95 @@
                         <div class="flex-grow-1">
                             <div class="subheading mb-3">あなたの力作を世界中の人にお披露目しましょう</div>
                             <div>【投稿する】</div>
+
+                            <!DOCTYPE html>
+                            <html lang="ja">
+                            <head>
+                              <meta charset="UTF-8">
+                              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                              <title>test</title>
+                            </head>
+                            <body>
+                                <form action="test.html" method="post"  enctype="multipart/form-data" >
+                                <input type="file" name="test" onchange="previewFile(this);">
+        
+                                <style type="text/css">
+                                    .button {
+                                      display       : inline-block;
+                                      border-radius : 20%;          /* 角丸       */
+                                      font-size     : 18pt;        /* 文字サイズ */
+                                      text-align    : center;      /* 文字位置   */
+                                      cursor        : pointer;     /* カーソル   */
+                                      padding       : 12px 12px;   /* 余白       */
+                                      background    : #ff7f00;     /* 背景色     */
+                                      color         : #333333;     /* 文字色     */
+                                      line-height   : 1em;         /* 1行の高さ  */
+                                      transition    : .3s;         /* なめらか変化 */
+                                      box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+                                      border        : 2px solid #ff7f00;    /* 枠の指定 */
+                                    }
+                                    .button:hover {
+                                      box-shadow    : none;        /* カーソル時の影消去 */
+                                      color         : #ff7f00;     /* 背景色     */
+                                      background    : #333333;     /* 文字色     */
+                                    }
+                                    </style>
+        
+                              </form>
+                              <p>プレビュー</p>
+                              <img id="preview">
+                             
+                              <script>
+                              function previewFile(hoge){
+                                var fileData = new FileReader();
+                                fileData.onload = (function() {
+                                  //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
+                                  //プレビュー表示している
+                                  document.getElementById('preview').src = fileData.result;
+                                });
+                                fileData.readAsDataURL(hoge.files[0]);
+                              }
+                              </script>
+                              </body>
+                            </html>  
+        
+        
+                            <!DOCTYPE html>
+        <html lang="ja">
+        <head>
+        <meta charset="utf-8">
+        <title>HTML入門-フォームの作成</title>
+        </head>
+        <body>
+        <form action="#" method="post">
+            <p>作品名：<br>
+                <label>
+                    <span class="textbox-003-label"></span>
+                    <input type="text" class="textbox-003" placeholder="作品名"/>
+                </label>
+            <p>作者：<br>
+                <label>
+                    <span class="textbox-003-label"></span>
+                    <input type="text" class="textbox-003" placeholder="作者"/>
+                </label>
+            <p>使用画材、素材：<br>
+                <label>
+                    <span class="textbox-004-label"></span>
+                    <input type="text" class="textbox-004" placeholder="使用画材、素材"/>
+                </label>
+        
+            <p>サイズ：<br>
+                <label>
+                    <span class="textbox-003-label"></span>
+                    <input type="text" class="textbox-003" placeholder="サイズ"/>
+                </label>
+        </form>
+        </body>
+        
+                          
+        
+                           
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
 
 
                         </div>
