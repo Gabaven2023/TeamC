@@ -11100,11 +11100,17 @@ color: #999;
 >>>>>>> 7d7d08319fe772caa6bea5015095d83ad07d34e6
 
 
+.bunnrui{
+  color: #ee7800
+}
+
+
+
 .search_container{
   box-sizing: border-box;
 }
 .search_container input[type="text"]{
-  border: 1px solid #999;
+  border: 1px solid #ee7800;
   padding: 3px 5px;
   border-radius: 20px;
   height: 2.0em;
@@ -11120,10 +11126,8 @@ color: #999;
   font-size: 1.3em;
   border: none;
   background: none;
-  color:  #ee7800;
+  color: #ee7800;
   outline : none;
   display: inline-block;
   vertical-align: middle;
 }
-
-

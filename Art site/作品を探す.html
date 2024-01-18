@@ -28,8 +28,7 @@
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">トップページ</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">作品を探す</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">投稿する</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">売る</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">作家を探す</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">買う・依頼する</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">マイページ</a></li>
                 </ul>
@@ -69,39 +68,29 @@
                      <form action="" method="POST">
   
                         <select name="cid">
-                          <option value="">全て</option>
-                          <option value="2">お知らせ</option>
-                          <option value="3">製品情報</option>
-                          <option value="4">会社概要</option>
+                          <option value="" selected="selected">全て</option>
+                          <option value="2">日本画</option>
+                          <option value="3">洋画</option>
+                          <option value="4">現代アート</option>
                           <option value="6">お問い合わせ</option>
-                          <option value="7" selected="selected">採用情報</option>
+                          <option value="7">採用情報</option>
                           <option value="8">物件情報</option>
                         </select>
                         
-                      <input type="submit" name="ACMS_POST_2GET" value="検索">
+        
                       </form>
+                        <br>
                         
+
+                      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
                       <form method="get" action="#" class="search_container">
                         <input type="text" size="25" placeholder=" キーワード検索">
-                        <input type="submit" value="検索">
-                      </form>
+                        <input type="submit" value="&#xf002">
+                      </form>                 
                       
                     
-                
-            <!-- Education-->
-
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">おすすめの作家</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Senior Web Developer</h3>
-                            <div class="subheading mb-3">Intelitec Solutions</div>
-                            <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">March 2013 - Present</span></div>
-                    </div>
-              
+               
             <!-- Education-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
@@ -123,7 +112,29 @@
             <!-- Skills-->
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
+                    <h2 class="mb-5">作家を探す</h2>
+
+                    <select name="cid">
+                        <option value="" selected="selected">全て</option>
+                        <option value="2">日本画</option>
+                        <option value="3">洋画</option>
+                        <option value="4">現代アート</option>
+                        <option value="6">お問い合わせ</option>
+                        <option value="7">採用情報</option>
+                        <option value="8">物件情報</option>
+                      </select>
+        
+                    </form>
+                      <br>
+                      
+        
+                    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        
+                    <form method="get" action="#" class="search_container">
+                      <input type="text" size="25" placeholder=" キーワード検索">
+                      <input type="submit" value="&#xf002">
+                    </form>    
+
                     <div class="subheading mb-3">Programming Languages & Tools</div>
                     <ul class="list-inline dev-icons">
                         <li class="list-inline-item"><i class="fab fa-html5"></i></li>
@@ -137,30 +148,22 @@
                         <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
                         <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
                         <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
+
                     </ul>
                     <div class="subheading mb-3">Workflow</div>
                     <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
+                
+                         
                         </li>
                     </ul>
                 </div>
+                 <br>
+                        
+                
+
             </section>
             <hr class="m-0" />
+
             <!-- Interests-->
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
