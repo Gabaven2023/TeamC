@@ -111,16 +111,7 @@
                        
            
 
-                    <!DOCTYPE html>
-                    <html lang="ja">
-                    <head>
-                      <meta charset="UTF-8">
-                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                      <title>test</title>
-                    </head>
-                    <body>
-                        <form action="test.html" method="post"  enctype="multipart/form-data" >
-                        <input type="file" name="test" onchange="previewFile(this);">
+                  
 
                         <style type="text/css">
                             .button {
@@ -144,26 +135,50 @@
                             }
                             </style>
 
-                      </form>
-                      <p>プレビュー</p>
-                      <img id="preview">
-                     
-                      <script>
-                      function previewFile(hoge){
-                        var fileData = new FileReader();
-                        fileData.onload = (function() {
-                          //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
-                          //プレビュー表示している
-                          document.getElementById('preview').src = fileData.result;
-                        });
-                        fileData.readAsDataURL(hoge.files[0]);
-                      }
-                      </script>
-                      </body>
-                    </html>  
+                      
 
 
                     <!DOCTYPE html>
+
+                    <!DOCTYPE html>
+                    <html>
+                      <body>
+                        <div>
+                          <input type="file" id="file-input">
+                        </div>
+                    
+                        <div>
+                          <img id="preview-image"width="300" height="200">
+                        </div>
+                    
+                        <script>
+                          const fileInput = document.getElementById('file-input')
+                          const previewImage = document.getElementById('preview-image')
+                    
+                          fileInput.addEventListener('change', (event) => {
+                            const reader = new window.FileReader()
+                            const file = event.target.files[0]
+                    
+                            reader.onload = (readerEvent) => {
+                              const data = new Uint8Array(readerEvent.target.result)
+                    
+                              const chunkSize = 0x8000;
+                              const chars = [];
+                              for (let i = 0; i < data.length; i += chunkSize) {
+                                chars.push(String.fromCharCode.apply(null, data.subarray(i, i + chunkSize)));
+                              }
+                              const encodedData = window.btoa(chars.join(''))
+                    
+                              previewImage.src = `data:${file.type};base64,${encodedData}`
+                            };
+                    
+                            reader.readAsArrayBuffer(file)
+                          })
+                        </script>
+                      </body>
+                    </html>
+
+
 <html lang="ja">
 <head>
 <meta charset="utf-8">
@@ -201,6 +216,7 @@
         
         
 </form>
+<a class="btn btn-light btn-xl" >投稿する</a>
 </body>
 
                   
