@@ -82,106 +82,15 @@
                 </div>
             </section>
             <hr class="m-0" />
+
             <!-- Skills-->
             <section class="resume-section" id="skills">
+            
                 <div class="resume-section-content">
-                    <html lang="ja"> 
-
-                    <head> 
                     
-                    <meta charset="UTF-8"> 
-                    
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-                    
-                    <title>test</title> 
-                    
-                    </head> 
-                    
-                    <body> 
-                    
-                    <form action="test.html" method="post" enctype="multipart/form-data" > 
-                    
-                    <input type="file" name="test" onchange="previewFile(this);"> 
-                    
-                     
-                    
-                    <style type="text/css"> 
-                    
-                    .button { 
-                    
-                    display : inline-block; 
-                    
-                    border-radius : 20%; /* 角丸 */ 
-                    
-                    font-size : 18pt; /* 文字サイズ */ 
-                    
-                    text-align : center; /* 文字位置 */ 
-                    
-                    cursor : pointer; /* カーソル */ 
-                    
-                    padding : 12px 12px; /* 余白 */ 
-                    
-                    background : #ff7f00; /* 背景色 */ 
-                    
-                    color : #333333; /* 文字色 */ 
-                    
-                    line-height : 1em; /* 1行の高さ */ 
-                    
-                    transition : .3s; /* なめらか変化 */ 
-                    
-                    box-shadow : 3px 3px 3px #666666; /* 影の設定 */ 
-                    
-                    border : 2px solid #ff7f00; /* 枠の指定 */ 
-                    
-                    } 
-                    
-                    .button:hover { 
-                    
-                    box-shadow : none; /* カーソル時の影消去 */ 
-                    
-                    color : #ff7f00; /* 背景色 */ 
-                    
-                    background : #333333; /* 文字色 */ 
-                    
-                    } 
-                    
-                    </style> 
-                    
-                     
-                    
-                    </form> 
-                    
-                    <p>プレビュー</p> 
-                    
-                    <img id="preview"> 
-                    
-                    <script> 
-                    
-                    function previewFile(hoge){ 
-                    
-                    var fileData = new FileReader(); 
-                    
-                    fileData.onload = (function() { 
-                    
-                    //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで 
-                    
-                    //プレビュー表示している 
-                    
-                    document.getElementById('preview').src = fileData.result; 
-                    
-                    }); 
-                    
-                    fileData.readAsDataURL(hoge.files[0]); 
-                    
-                    } 
-                    
-                    </script> 
-                    
-                    </body> 
-                    
-                    </html>  
-                    
-                     
+                    <input type="file" id="example" multiple>
+                    <!-- 👇ここにプレビュー画像を追加する -->
+                    <div id="preview"></div>
                     
                      
                     
@@ -265,10 +174,13 @@
                     </form> 
                 
                     <form id="himodoke"><!--なんか書くとこ--></form>
-                    <button type="submit" form="himoduke">送信</button>
-                        
-                    </body>  
+                
+                    <button onclick="location.href='file:///C:/Users/owner/Desktop/%E3%81%8C%E3%81%B0%E3%83%99%E3%83%B3/%E3%81%8C%E3%81%B0%E3%81%B9%E3%82%93%EF%BC%93/MyRepository/Art%20site/%E9%80%81%E4%BF%A1%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html'">送信</button>
+
+                    </body> 
+         
                 </div>
+                
             </section>
             <hr class="m-0" />
             <html lang="ja"> 
@@ -278,10 +190,15 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">購入依頼</h2>
-                    <p>2023年12月5日　作品A　価格1万円　佐賀大学様</p>
-                    <p>2024年12月28日　作品B　価格1万円　鳥栖大学様</p>
+                    <details open> 
+                        <summary>クリックして表示する</summary>
+                          <li>2023年12月5日　作品A　価格1万円　佐賀大学様</li>
+                          <li>2024年12月28日　作品B　価格1万円　鳥栖大学様</li>
+                          <li>2024年12月30日　作品B　価格1万円　大和大学様</li>
+                      </details>
+                    
                     <p class="mb-0"><!--なんか書くとこ--></p>
-                    <button type="button">全て表示</button>
+                    
                 </div>
             </section>
             <hr class="m-0" />
@@ -315,7 +232,7 @@
                         </li>
                         
                     </ul>
-                    <button type="button">全て表示</button>
+                    
                 </div>
             </section>
         </div>
