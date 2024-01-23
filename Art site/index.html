@@ -70,24 +70,28 @@
                         <div class="flex-grow-1">
                             <div class="subheading mb-3">あなたのお気に入りの作品を見つけましょう</div>
                             <p>検索、作品一覧などから様々な作品を探すことができます。</p>
+                            <a href="作品を探す.html" target="_blank" > 【検索ページへ】 </a>
+                            <br><br>
 
                             <div style="text-align: left">
                                 <img src="assets/作品画像/がばベン用森山/１.png"width="300" height="200">
-                                <img src="assets/作品画像/がばベン用森山/２.png"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用森山/３.png"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用森山/４.png"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用森山/５.png"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用森山/５.png"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用川内/1ファイル .JPG"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用川内/2ファイル .jpg"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用川内/3ファイル .jpg"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用川内/4ファイル .jpg"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用川内/5ファイル .jpg"width="300" height="200">>
-                                <img src="assets/作品画像/がばベン用川内/6ファイル .jpg"width="300" height="200">>
+                                <img src="assets/作品画像/がばベン用森山/２.png"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用森山/３.png"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用森山/４.png"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用森山/５.png"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用川内/1ファイル .JPG"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用川内/2ファイル .jpg"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用川内/3ファイル .jpg"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用川内/5ファイル .jpg"width="300" height="200">
+                                <img src="assets/作品画像/がばベン用川内/6ファイル .jpg"width="300" height="200">
                               </div>
 
-                              <a href="作品を探す.html" target="_blank" > 【検索ページへ】 </a>
+                             
 
+                                
+                              </div>
+
+                             
 
 
 
@@ -104,22 +108,10 @@
                     <h2 class="mb-5">投稿する</h2>
                     <div class="flex-grow-1">
                         <div class="subheading mb-3">あなたの力作を世界中の人にお披露目しましょう</div>
-                        
-                        <input type="file" id="example" multiple>
-                        <!-- 👇ここにプレビュー画像を追加する -->
-                        <div id="preview"></div> 
+                       
            
 
-                    <!--<!DOCTYPE html>
-                    <html lang="ja">
-                    <head>
-                      <meta charset="UTF-8">
-                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                      <title>test</title>
-                    </head>
-                    <body>
-                        <form action="test.html" method="post"  enctype="multipart/form-data" >
-                        <input type="file" name="test" onchange="previewFile(this);">
+                  
 
                         <style type="text/css">
                             .button {
@@ -143,27 +135,50 @@
                             }
                             </style>
 
-                      </form>
-                      <p>プレビュー</p>
-                      <img id="preview">
-                     
-                      <script>
-                      function previewFile(hoge){
-                        var fileData = new FileReader();
-                        fileData.onload = (function() {
-                          //id属性が付与されているimgタグのsrc属性に、fileReaderで取得した値の結果を入力することで
-                          //プレビュー表示している
-                          document.getElementById('preview').src = fileData.result;
-                        });
-                        fileData.readAsDataURL(hoge.files[0]);
-                      }
-                      </script>
-                      </body>
-                    </html>  
+                      
 
 
-                    <!DOCTYPE html>-->
+                    <!DOCTYPE html>
+
+                    <!DOCTYPE html>
+                    <html>
+                      <body>
+                        <div>
+                          <input type="file" id="file-input">
+                        </div>
                     
+                        <div>
+                          <img id="preview-image"width="300" height="200">
+                        </div>
+                    
+                        <script>
+                          const fileInput = document.getElementById('file-input')
+                          const previewImage = document.getElementById('preview-image')
+                    
+                          fileInput.addEventListener('change', (event) => {
+                            const reader = new window.FileReader()
+                            const file = event.target.files[0]
+                    
+                            reader.onload = (readerEvent) => {
+                              const data = new Uint8Array(readerEvent.target.result)
+                    
+                              const chunkSize = 0x8000;
+                              const chars = [];
+                              for (let i = 0; i < data.length; i += chunkSize) {
+                                chars.push(String.fromCharCode.apply(null, data.subarray(i, i + chunkSize)));
+                              }
+                              const encodedData = window.btoa(chars.join(''))
+                    
+                              previewImage.src = `data:${file.type};base64,${encodedData}`
+                            };
+                    
+                            reader.readAsArrayBuffer(file)
+                          })
+                        </script>
+                      </body>
+                    </html>
+
+
 <html lang="ja">
 <head>
 <meta charset="utf-8">
@@ -192,11 +207,19 @@
             <span class="textbox-003-label"></span>
             <input type="text" class="textbox-003" placeholder="サイズ"/>
         </label>
-    
+
+    <p>作品の説明：<br>
+        <label>
+            <span class="textbox-003-label"></span>
+            <input type="text" class="textbox-003" placeholder="作品の説明"/>
+        </label>
+        
+        
 </form>
+<a class="btn btn-light btn-xl" >投稿する</a>
 </body>
 
-<button onclick="location.href='file:///C:/Users/owner/Desktop/%E3%81%8C%E3%81%B0%E3%83%99%E3%83%B3/%E3%81%8C%E3%81%B0%E3%81%B9%E3%82%93%EF%BC%93/MyRepository/Art%20site/%E9%80%81%E4%BF%A1%E3%81%97%E3%81%BE%E3%81%97%E3%81%9F.html'">投稿する</button>                 
+                  
 
                    
                
